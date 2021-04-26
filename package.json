@@ -1,0 +1,21 @@
+{
+  "name": "prac1",
+  "version": "5.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint-staged": "npx lint-staged",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix"
+    ]
+  }
+}
